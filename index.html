@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bike Rental Shop - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header role="banner">
+    <div class="logo-container">
+      <img src='logo1.png' alt="Bike Store Logo">
+    </div>
+    <nav role="navigation">
+      <ul>
+        <li><a href="#home" tabindex="1">Home</a></li>
+        <li><a href="#bikes" tabindex="2">Our Bikes</a></li>
+        <li><a href="#services" tabindex="3">Our Services</a></li>
+        <li><a href="#contact" tabindex="4">Contact Us</a></li>
+        <!-- Кнопка для переключения темы -->
+        <button id="theme-toggle" aria-label="Toggle theme" tabindex="43">Dark Theme</button>
+        <button class="speak-button" onclick="speakTextt()">Voice Assistant</button>
+        <button id="stopButton">Stop</button>
+        <button id="toggleGray">Grey Filter</button>
+      </ul>
+    </nav>
+    <div class="font-size-controls">
+      <button id="increase-font">A+</button>
+      <button id="decrease-font">A-</button>
+    </div>
+  </header>
+  <main id="main-content" role="main">
+    <section id="home" class="home">
+      <div class="parallax-container home__parallax">
+        <div class="parallax-image" style="background-image: url('./homephoto.jpg');" aria-hidden="true"></div>
+        <div class="parallax-content">
+          <h1 tabindex="5">Welcome to Our Bike Rental Shop!</h1>
+        </div>
+      </div>
+    </section>
+    <section id="bikes">
+      <h2 tabindex="6">Our Bikes</h2>
+      <ul class="items-list">
+        <li class="list-item">
+          <div class="list-item__image">
+            <img src='bike1.jpg' alt="Mountain Bike" tabindex="7" />
+          </div>
+          <div class="list-item__body">
+            <h3 tabindex="8">Mountain Bike</h3>
+            <p tabindex="9">Our mountain bikes are perfect for off-road adventures. They feature sturdy frames, wide tires, and powerful brakes to help you tackle any terrain.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__image">
+            <img src='bike2.jpg' alt="Road Bike" tabindex="10" />
+          </div>
+          <div class="list-item__body">
+            <h3 tabindex="11">Road Bike</h3>
+            <p tabindex="12">Our road bikes are lightweight and fast, perfect for long rides on paved roads. They feature narrow tires and drop handlebars for a comfortable and aerodynamic riding position.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__image">
+            <figure>
+              <img src='bike3.jpg' alt="Hybrid Bike" tabindex="13" />
+              <figcaption>Hybrid Bike - Perfect for city riding or casual rides on dirt roads.</figcaption>
+            </figure>
+          </div>
+          <div class="list-item__body">
+            <h3 tabindex="14">Hybrid Bike</h3>
+            <p tabindex="15">Our hybrid bikes offer the best of both worlds, with a comfortable upright riding position and wide tires for stability. They're perfect for city riding or casual rides on dirt roads.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="services">
+      <h2 tabindex="16">Our Services</h2>
+      <ul class="items-list">
+        <li class="list-item">
+          <div class="list-item__image background-image" style="background-image: url('service1.jpg');" tabindex="17"></div>
+          <div class="list-item__body">
+            <h3 tabindex="18">Bike Repair</h3>
+            <p tabindex="19">Our experienced mechanics can repair any bike, from a simple flat tire to a complete overhaul. We use only high-quality parts and guarantee our work.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__image">
+            <img src='service2.jpg' alt="Bike Fitting" tabindex="20" />
+          </div>
+          <div class="list-item__body">
+            <h3 tabindex="21">Bike Fitting</h3>
+            <p tabindex="22">Our certified bike fitters can help you find the perfect position on your bike, ensuring maximum comfort and efficiency. We use state-of-the-art technology to measure your body and bike, and make adjustments accordingly.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__image">
+            <img src='service3.jpg' alt="Bike Rental" tabindex="23" />
+          </div>
+          <div class="list-item__body">
+            <h3 tabindex="24">Bike Rental</h3>
+            <p tabindex="25">Rent a bike from us and explore the city or countryside at your own pace. We have a wide range of bikes available for rent, from mountain bikes to road bikes and everything in between.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="videos">
+      <h2 tabindex="26">Videos</h2>
+      <p tabindex="27">This video should motivate you to get off the couch and go for a bike ride. Enjoy the inspiring footage and let it fuel your passion for cycling!</p>
+      <video width="700" height="500" controls tabindex="28">
+        <source src="videos.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section id="contact">
+      <h2 tabindex="29">Contact Us</h2>
+      <p tabindex="30">
+        Phone: (577) 057-225<br>
+        Email: bsemeniy@gmail.com<br>
+        Address: 123 Main St, Katowice, PL
+      </p>
+      <h3 tabindex="31">Send Us a Message</h3>
+      <form id="contactform" action="#" method="post">
+        <div class="form-control">
+          <label for="name" tabindex="32">Name:</label>
+          <input type="text" id="name" name="name" required tabindex="33">
+          <small class="error-message" tabindex="34"></small>
+        </div>
+        <div class="form-control">
+          <label for="email" tabindex="35">Email:</label>
+          <input type="email" id="email" name="email" required tabindex="36">
+          <small class="error-message" tabindex="37"></small>
+        </div>
+        <div class="form-control">
+          <label for="message" tabindex="38">Message:</label>
+          <textarea id="message" name="message" required tabindex="39"></textarea>
+          <small class="error-message" tabindex="40"></small>
+        </div>
+        <input type="submit" value="Send" tabindex="41">
+      </form>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <p tabindex="42">&copy; 2024 Bike Rental Shop</p>
+  </footer>
+  <script src="index.js"></script>
+  <script>
+    let baseFontSize = 16;
+  
+    // Элементы кнопок
+    const increaseFontButton = document.getElementById('increase-font');
+    const decreaseFontButton = document.getElementById('decrease-font');
+  
+    function updateFontSize() {
+      document.documentElement.style.setProperty('--font-size-base', `${baseFontSize}px`);
+    }
+  
+    
+    increaseFontButton.addEventListener('click', () => {
+      if (baseFontSize < 24) { // Ограничим максимум
+        baseFontSize += 2;
+        updateFontSize();
+      }
+    });
+  
+    
+    decreaseFontButton.addEventListener('click', () => {
+      if (baseFontSize > 12) { // Ограничим минимум
+        baseFontSize -= 2;
+        updateFontSize();
+      }
+    });
+  
+    updateFontSize();
+  </script>
+  
+</body>
+<script src="index.js" defer></script>
+<button id="theme-toggle" aria-label="Toggle theme" tabindex="43">Dark Theme</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggleButton = document.getElementById("theme-toggle");
+  if (!themeToggleButton) return; // Якщо кнопки немає, вийти
+
+  // Перевірка та застосування теми при завантаженні сторінки
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-theme");
+    themeToggleButton.textContent = "Light Theme";
+  } else {
+    themeToggleButton.textContent = "Dark Theme";
+  }
+
+  themeToggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+      themeToggleButton.textContent = "Light Theme";
+      localStorage.setItem("theme", "dark");
+    } else {
+      themeToggleButton.textContent = "Dark Theme";
+      localStorage.setItem("theme", "light");
+    }
+  });
+});
+</script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
