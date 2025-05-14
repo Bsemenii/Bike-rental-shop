@@ -1,66 +1,31 @@
-
 # 🚲 Bike Rental Shop
 
-A modern and accessible website designed for a fictional bike rental company. This project demonstrates best practices in web accessibility, responsive design, and user interaction using HTML, CSS, and JavaScript.
+A simple and modern website for a fictional bike rental company.
 
-## 🌐 Live Demo
+## ✅ Features
 
-> Coming soon...
+- Responsive design
+- Dark mode toggle
+- Font size controls
+- Voice assistant (Text-to-Speech)
+- Contact form with validation
+- Accessibility options (contrast, grayscale)
 
-## 📌 Features
+## 🗂️ Files Overview
 
-- **Responsive design** for mobile, tablet, and desktop
-- **Accessible navigation** using ARIA roles and keyboard focus
-- **Dark mode** toggle with `localStorage` support
-- **Font size controls** for better readability
-- **Voice assistant** using the Web Speech API (Text-to-Speech)
-- **Form validation** with real-time feedback
-- **Grayscale filter** toggle for visual accessibility
-- **Embedded promotional video**
+- `index.html` – main structure
+- `styles.css` – styling and dark mode
+- `index.js` – interactivity and logic
+- `bike1.jpg`, `bike2.jpg`, `bike3.jpg` – images of bikes
+- `service1.jpg`, `service2.jpg`, `service3.jpg` – service images
+- `homephoto.jpg`, `logo.png`, `logo1.png` – layout visuals
+- `videos.mp4` – promotional video
 
-## 🧱 Technologies Used
+## 🧱 Built With
 
 - HTML5
-- CSS3 (with custom properties and responsive design)
-- JavaScript (DOM manipulation, Web Speech API)
-- LocalStorage
-
-## 📁 Project Structure
-
-```
-📦 bike-rental-shop/
-├── index.html             # Main HTML file
-├── styles.css             # Styling (light/dark themes, layout, accessibility)
-├── index.js               # JavaScript for interactivity (theme toggle, voice, forms)
-├── images/                # Logo, bikes, services
-├── videos/                # Promotional video
-```
-
-## 📷 Screenshots
-
-> Add screenshots of the homepage, dark mode, form validation, and video section here.
-
-## ♿ Accessibility Features
-
-- Tab-indexed navigation
-- ARIA roles for semantic clarity
-- Contrast-friendly color themes
-- Text-to-Speech voice assistant
-- Font size adjustment
-- Grayscale filter option
-
-## 📨 Contact
-
-- Email: bsemeniy@gmail.com
-- Phone: (577) 057-225
-- Location: Katowice, Poland
-
-## ✅ To Do
-
-- Add backend support (e.g., Node.js or Firebase)
-- Integrate a real-time booking form
-- Add unit tests for accessibility compliance
-- Multi-language support (PL/EN)
+- CSS3
+- JavaScript
 
 ## 🧾 License
 
@@ -68,4 +33,4 @@ MIT License
 
 ---
 
-Built with ❤️ as part of a university project on barrier-free web design.
+Created as a student project. Feel free to explore and improve it!
